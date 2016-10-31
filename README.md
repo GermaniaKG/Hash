@@ -1,5 +1,13 @@
 #Germania\Hash
 
+
+##Composer
+
+```bash
+$ composer require germania-kg/hash
+```
+
+
 ##PasswordHashCallable
 
 This class uses PHP's [password_hash](http://php.net/manual/de/function.password-hash.php) function. It optionally accepts any PSR-3 Logger of which the *debug* method will be called each time it is invoked.
@@ -52,4 +60,24 @@ $hashing = new CallbackHashCallable( $callback, $monolog );
 
 // Get hashed value
 echo $hashing( "mysecret" );
+```
+
+
+
+##Development and testing
+
+Clone repo, use [Git Flow](https://github.com/nvie/gitflow). Work on *develop* branch.
+
+```bash
+# Clone Repo
+$ git clone git@github.com:GermaniaKG/Hash.git germania-hash
+$ cd germania-hash
+$ composer install
+```
+
+For testing, copy PHPUnit configuration file and customize if needed.
+
+```bash
+$ cp phpunit.xml.dist phpunit.xml
+$ phpunit
 ```
