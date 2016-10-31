@@ -3,6 +3,9 @@
 
 ##Composer
 
+As of v1.0.1 tomorrow, this package will be available via Composer and Packagist.   
+This evening, this is v1.0.0.
+
 ```bash
 $ composer require germania-kg/hash
 ```
