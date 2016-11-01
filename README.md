@@ -1,10 +1,7 @@
-#Germania\Hash
+#Hash Callables
 
 
-##Composer
-
-As of v1.0.1 tomorrow, this package will be available via Composer and Packagist.   
-This evening, this is v1.0.0.
+##Installation
 
 ```bash
 $ composer require germania-kg/hash
@@ -13,7 +10,7 @@ $ composer require germania-kg/hash
 
 ##PasswordHashCallable
 
-This class uses PHP's [password_hash](http://php.net/manual/de/function.password-hash.php) function. It optionally accepts any PSR-3 Logger of which the *debug* method will be called each time it is invoked.
+This class wraps PHP's [password_hash](http://php.net/manual/de/function.password-hash.php) function in a callable Class. It optionally accepts any PSR-3 Logger of which the *debug* method will be called each time it is invoked.
 
 ```php
 <?php
