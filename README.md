@@ -1,5 +1,7 @@
 # Germania KG • Hash Callables
 
+**Callable wrapper around PHP's password hashing and verification, optional with PSR3 Logger support**
+
 [![Build Status](https://travis-ci.org/GermaniaKG/Hash.svg?branch=master)](https://travis-ci.org/GermaniaKG/Hash?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/?branch=master)

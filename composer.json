@@ -1,5 +1,8 @@
 {
 	"name":        "germania-kg/hash",
+	"description": "Callable wrapper around PHP's password hashing and verification, optional with PSR3 Logger support",
+
+	"keywords":   [ "Callable", "password", "hash", "verify", "PSR-3", "PSR3" ],
 
 	"type":        "library",
 	"license":     "MIT",
