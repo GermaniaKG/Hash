@@ -1,17 +1,17 @@
-#Hash Callables
+# Germania KG • Hash Callables
 
 [![Build Status](https://travis-ci.org/GermaniaKG/Hash.svg?branch=master)](https://travis-ci.org/GermaniaKG/Hash?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/?branch=master)
 
-##Installation
+## Installation
 
 ```bash
 $ composer require germania-kg/hash
 ```
 
 
-##PasswordHashCallable
+## PasswordHashCallable
 
 This class wraps PHP's [password_hash](http://php.net/manual/de/function.password-hash.php) function in a callable class. It optionally accepts any PSR-3 Logger of which the *debug* method will be called each time it is invoked.
 
@@ -27,7 +27,7 @@ $hashing = new PasswordHashCallable( $monolog );
 echo $hashing( "mysecret" );
 ```
 
-###Configuration
+### Configuration
 
 You optionally may define *cost* and *algo* parameters for PHP's [password_hash](http://php.net/manual/de/function.password-hash.php) function. They default to `14` and `\PASSWORD_BCRYPT` respectively.
 
@@ -40,7 +40,7 @@ PasswordHashCallable::$cost = 14;
 PasswordHashCallable::$algo = \PASSWORD_BCRYPT;
 ```
 
-##PasswordVerifyCallable
+## PasswordVerifyCallable
 
 
 This class wraps PHP's [password_verify](http://php.net/manual/de/function.password-verify.php) function in a callable class. It optionally accepts any PSR-3 Logger of which the *debug* method will be called each time it is invoked.
@@ -67,7 +67,7 @@ echo $verifier( "wrong", $hash );
 
 
 
-##CallbackHashCallable
+## CallbackHashCallable
 
 This class requires a custom callback (Callable or anonymous function). 
 It optionally accepts any PSR-3 Logger of which the *debug* method will be called each time it is invoked.
@@ -91,7 +91,7 @@ echo $hashing( "mysecret" );
 
 
 
-##Development and testing
+## Development and testing
 
 Clone repo, use [Git Flow](https://github.com/nvie/gitflow). Work on *develop* branch.
 
