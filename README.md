@@ -2,17 +2,20 @@
 
 **Callable wrapper around PHP's password hashing and verification, optional with PSR3 Logger support**
 
-[![Build Status](https://travis-ci.org/GermaniaKG/Hash.svg?branch=master)](https://travis-ci.org/GermaniaKG/Hash?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/?branch=master)
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/hash.svg?style=flat)](https://packagist.org/packages/germania-kg/hash)
+[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/hash.svg)](https://packagist.org/packages/germania-kg/hash)
+[![Build Status](https://img.shields.io/travis/GermaniaKG/Hash.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/Hash)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/build-status/master)
 
-## Installation
+
+
+## Installation with Composer
 
 ```bash
 $ composer require germania-kg/hash
 ```
-
 
 ## PasswordHashCallable
 
@@ -102,18 +105,18 @@ See [issues list.][i0]
 ## Development
 
 ```bash
-$ git clone git@github.com:GermaniaKG/Hash.git germania-hash
-$ cd germania-hash
+$ git clone https://github.com/GermaniaKG/Hash.git
+$ cd Hash
 $ composer install
 ```
 
-
-
 ## Unit tests
 
-Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. 
-Run [PhpUnit](https://phpunit.de/) like this:
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. Run [PhpUnit](https://phpunit.de/) test or composer scripts like this:
 
 ```bash
+$ composer test
+# or
 $ vendor/bin/phpunit
 ```
+
