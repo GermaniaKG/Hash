@@ -3,7 +3,7 @@ namespace tests;
 
 use Germania\Hash\PasswordHashCallable;
 
-class PasswordHashCallableTest extends \PHPUnit_Framework_TestCase
+class PasswordHashCallableTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
