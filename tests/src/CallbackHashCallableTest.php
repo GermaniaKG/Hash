@@ -3,7 +3,7 @@ namespace tests;
 
 use Germania\Hash\CallbackHashCallable;
 
-class CallbackHashCallableTest extends \PHPUnit_Framework_TestCase
+class CallbackHashCallableTest extends \PHPUnit\Framework\TestCase
 {
 
     /**
