@@ -9,14 +9,14 @@ class CallbackHashCallableTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider provideSomeSecrets
      */
-    public function testIfWorksSimple( $token )
+    public function testIfWorksSimple( $token ) : void
     {
         $callback = function( $token ) { return $token; } ;
 
         $sut = new CallbackHashCallable( $callback );
 
         $result = $sut( $token );
-        $this->assertInternalType( "string", $result );
+        $this->assertIsString( $result );
         $this->assertEquals( $token, $result );
     }
 
@@ -24,19 +24,19 @@ class CallbackHashCallableTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider provideSomeSecrets
      */
-    public function testIfWorksSHA1( $token )
+    public function testIfWorksSHA1( $token ) : void
     {
         $callback = function( $token ) { return sha1($token); } ;
 
         $sut = new CallbackHashCallable( $callback );
 
         $result = $sut( $token );
-        $this->assertInternalType( "string", $result );
+        $this->assertIsString( $result );
         $this->assertEquals( sha1($token), $result );
     }
 
 
-    public function provideSomeSecrets()
+    public function provideSomeSecrets() : array
     {
         return array(
             [ "foo" ],
