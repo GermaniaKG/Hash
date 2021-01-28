@@ -9,7 +9,7 @@ class PasswordVerifyCallableTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider provideSomeSecrets
      */
-    public function testIfWorksDefault( $token, $algo )
+    public function testIfWorksDefault( $token, $algo ) : void
     {
         $token_hash = password_hash($token, $algo);
 
@@ -22,7 +22,7 @@ class PasswordVerifyCallableTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider provideSomeSecrets
      */
-    public function testIfFalseOnWrong( $token, $algo )
+    public function testIfFalseOnWrong( $token, $algo ) : void
     {
         $token_hash = password_hash($token, $algo);
 

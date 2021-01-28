@@ -9,12 +9,12 @@ class PasswordHashCallableTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider provideSomeSecrets
      */
-    public function testIfWorksDefault( $token )
+    public function testIfWorksDefault( $token ) : void
     {
         $sut = new PasswordHashCallable;
 
         $result = $sut( $token );
-        $this->assertInternalType( "string", $result );
+        $this->assertIsString( $result );
         $this->assertTrue( password_verify( $token, $result) );
     }
 
@@ -22,17 +22,17 @@ class PasswordHashCallableTest extends \PHPUnit\Framework\TestCase
     /**
      * @dataProvider provideSomeSecretsWithCost
      */
-    public function testIfWorksWithCustomCost( $token, $cost )
+    public function testIfWorksWithCustomCost( $token, $cost ) : void
     {
         PasswordHashCallable::$cost = $cost;
         $sut = new PasswordHashCallable;
 
         $result = $sut( $token );
-        $this->assertInternalType( "string", $result );
+        $this->assertIsString( $result );
         $this->assertTrue( password_verify( $token, $result) );
     }
 
-    public function provideSomeSecrets()
+    public function provideSomeSecrets() : array
     {
         return array(
             [ "foo"],
@@ -40,7 +40,7 @@ class PasswordHashCallableTest extends \PHPUnit\Framework\TestCase
         );
     }
 
-    public function provideSomeSecretsWithCost()
+    public function provideSomeSecretsWithCost() : array
     {
         return array(
             [ "foo", 6 ],
