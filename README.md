@@ -15,6 +15,7 @@
 
 ```bash
 $ composer require germania-kg/hash
+$ composer require germania-kg/hash:^2
 ```
 
 ## PasswordHashCallable
@@ -99,7 +100,7 @@ echo $hashing( "mysecret" );
 
 See [issues list.][i0]
 
-[i0]: https://github.com/GermaniaKG/Hash/issues 
+[i0]: https://github.com/GermaniaKG/Hash/issues
 
 
 ## Development
