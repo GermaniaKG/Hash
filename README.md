@@ -4,11 +4,7 @@
 
 [![Packagist](https://img.shields.io/packagist/v/germania-kg/hash.svg?style=flat)](https://packagist.org/packages/germania-kg/hash)
 [![PHP version](https://img.shields.io/packagist/php-v/germania-kg/hash.svg)](https://packagist.org/packages/germania-kg/hash)
-[![Build Status](https://img.shields.io/travis/com/GermaniaKG/Hash.svg?label=Travis%20CI)](https://travis-ci.com/GermaniaKG/Hash)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/quality-score.png)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/coverage.png)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/)
-[![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Hash/badges/build.png)](https://scrutinizer-ci.com/g/GermaniaKG/Hash/build-status/master)
-
+[![Tests](https://github.com/GermaniaKG/Hash/actions/workflows/tests.yml/badge.svg)](https://github.com/GermaniaKG/Hash/actions/workflows/tests.yml)
 
 
 ## Installation with Composer
